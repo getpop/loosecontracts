@@ -1,5 +1,5 @@
 <?php
-namespace PoP\Engine\LooseContracts;
+namespace PoP\LooseContracts\Contracts;
 
 use PoP\Hooks\Contracts\HooksAPIInterface;
 use PoP\LooseContracts\Contracts\NameResolverInterface;

@@ -1,7 +1,7 @@
 <?php
-namespace PoP\LooseContracts\Facades\Contracts;
+namespace PoP\LooseContracts\Facades;
 
-use PoP\LooseContracts\Contracts\NameResolverInterface;
+use PoP\LooseContracts\NameResolverInterface;
 use PoP\Root\Container\ContainerBuilderFactory;
 
 class NameResolverFacade

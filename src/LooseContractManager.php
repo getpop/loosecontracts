@@ -1,5 +1,5 @@
 <?php
-namespace PoP\LooseContracts\Contracts;
+namespace PoP\LooseContracts;
 
 class LooseContractManager implements LooseContractManagerInterface
 {

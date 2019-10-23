@@ -1,9 +1,9 @@
 <?php
-namespace PoP\LooseContracts\Contracts;
+namespace PoP\LooseContracts;
 
-use PoP\Hooks\Contracts\HooksAPIInterface;
-use PoP\LooseContracts\Contracts\NameResolverInterface;
-use PoP\LooseContracts\Contracts\LooseContractManagerInterface;
+use PoP\Hooks\HooksAPIInterface;
+use PoP\LooseContracts\NameResolverInterface;
+use PoP\LooseContracts\LooseContractManagerInterface;
 
 abstract class AbstractLooseContractResolutionSet
 {

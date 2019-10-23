@@ -1,7 +1,7 @@
 <?php
-namespace PoP\LooseContracts\Facades\Contracts;
+namespace PoP\LooseContracts\Facades;
 
-use PoP\LooseContracts\Contracts\LooseContractManagerInterface;
+use PoP\LooseContracts\LooseContractManagerInterface;
 use PoP\Root\Container\ContainerBuilderFactory;
 
 class LooseContractManagerFacade

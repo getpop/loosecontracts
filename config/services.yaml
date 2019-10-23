@@ -1,13 +1,13 @@
 services:
     _defaults:
         bind:
-            PoP\LooseContracts\Contracts\LooseContractManagerInterface: '@loose_contract_manager'
+            PoP\LooseContracts\LooseContractManagerInterface: '@loose_contract_manager'
 
     loose_contract_manager:
-        class: \PoP\LooseContracts\Contracts\LooseContractManager
+        class: \PoP\LooseContracts\LooseContractManager
         public: true
 
     loose_contract_name_resolver:
-        class: \PoP\LooseContracts\Contracts\NameResolver
+        class: \PoP\LooseContracts\NameResolver
         public: true
 

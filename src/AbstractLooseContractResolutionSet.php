@@ -26,5 +26,5 @@ abstract class AbstractLooseContractResolutionSet
      *
      * @return void
      */
-    protected abstract function resolveContracts();
+    abstract protected function resolveContracts();
 }

@@ -14,15 +14,17 @@ abstract class AbstractLooseContractSet
         $this->looseContractManager->requireHooks(
             $this->getRequiredHooks()
         );
-		$this->looseContractManager->requireNames(
+        $this->looseContractManager->requireNames(
             $this->getRequiredNames()
         );
     }
 
-	public function getRequiredHooks() {
-		return [];
-	}
-	public function getRequiredNames() {
-		return [];
-	}
+    public function getRequiredHooks()
+    {
+        return [];
+    }
+    public function getRequiredNames()
+    {
+        return [];
+    }
 }

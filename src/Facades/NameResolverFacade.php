@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace PoP\LooseContracts\Facades;
 
 use PoP\LooseContracts\NameResolverInterface;

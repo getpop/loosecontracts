@@ -8,7 +8,7 @@ abstract class AbstractLooseContractSet
 {
     protected $looseContractManager;
 
-    function __construct(
+    public function __construct(
         LooseContractManagerInterface $looseContractManager
     ) {
         $this->looseContractManager = $looseContractManager;

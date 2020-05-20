@@ -1,2 +1,2 @@
 <?php
-\PoP\LooseContracts\Component::init();
+//\PoP\LooseContracts\Component::initialize();

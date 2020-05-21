@@ -20,12 +20,13 @@ Via Composer
 composer require getpop/loosecontracts
 ```
 
-<!--
 ## Usage
 
+Initialize the component:
+
 ``` php
+\PoP\LooseContracts\Component::initialize();
 ```
--->
 
 ## Standards
 

@@ -25,7 +25,9 @@ composer require getpop/loosecontracts
 Initialize the component:
 
 ``` php
-\PoP\LooseContracts\Component::initialize();
+\PoP\Root\ComponentLoader::initializeComponents([
+    \PoP\LooseContracts\Component::class,
+]);
 ```
 
 ## Standards

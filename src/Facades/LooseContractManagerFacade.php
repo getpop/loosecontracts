@@ -11,6 +11,10 @@ class LooseContractManagerFacade
 {
     public static function getInstance(): LooseContractManagerInterface
     {
-        return ContainerBuilderFactory::getInstance()->get('loose_contract_manager');
+        /**
+         * @var LooseContractManagerInterface
+         */
+        $service = ContainerBuilderFactory::getInstance()->get('loose_contract_manager');
+        return $service;
     }
 }

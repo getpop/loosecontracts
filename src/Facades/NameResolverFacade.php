@@ -11,6 +11,10 @@ class NameResolverFacade
 {
     public static function getInstance(): NameResolverInterface
     {
-        return ContainerBuilderFactory::getInstance()->get('loose_contract_name_resolver');
+        /**
+         * @var NameResolverInterface
+         */
+        $service = ContainerBuilderFactory::getInstance()->get('loose_contract_name_resolver');
+        return $service;
     }
 }

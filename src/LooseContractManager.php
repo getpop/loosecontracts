@@ -6,10 +6,22 @@ namespace PoP\LooseContracts;
 
 class LooseContractManager implements LooseContractManagerInterface
 {
-    protected $requiredHooks = [];
-    protected $implementedHooks = [];
-    protected $requiredNames = [];
-    protected $implementedNames = [];
+    /**
+     * @var string[]
+     */
+    protected array $requiredHooks = [];
+    /**
+     * @var string[]
+     */
+    protected array $implementedHooks = [];
+    /**
+     * @var string[]
+     */
+    protected array $requiredNames = [];
+    /**
+     * @var string[]
+     */
+    protected array $implementedNames = [];
 
     public function getNotImplementedRequiredHooks(): array
     {

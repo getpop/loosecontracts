@@ -6,7 +6,10 @@ namespace PoP\LooseContracts;
 
 class NameResolver extends AbstractNameResolver
 {
-    protected $names = [];
+    /**
+     * @var string[]
+     */
+    protected array $names = [];
 
     public function getName(string $name)
     {

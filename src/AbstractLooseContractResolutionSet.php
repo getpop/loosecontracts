@@ -10,9 +10,10 @@ use PoP\LooseContracts\LooseContractManagerInterface;
 
 abstract class AbstractLooseContractResolutionSet
 {
-    protected $looseContractManager;
-    protected $nameResolver;
-    protected $hooksAPI;
+    protected LooseContractManagerInterface $looseContractManager;
+    protected NameResolverInterface $nameResolver;
+    protected HooksAPIInterface $hooksAPI;
+
     public function __construct(
         LooseContractManagerInterface $looseContractManager,
         NameResolverInterface $nameResolver,

@@ -14,7 +14,7 @@ class NameResolverFacade
         /**
          * @var NameResolverInterface
          */
-        $service = ContainerBuilderFactory::getInstance()->get('loose_contract_name_resolver');
+        $service = ContainerBuilderFactory::getInstance()->get(NameResolverInterface::class);
         return $service;
     }
 }

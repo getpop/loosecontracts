@@ -14,7 +14,7 @@ class LooseContractManagerFacade
         /**
          * @var LooseContractManagerInterface
          */
-        $service = ContainerBuilderFactory::getInstance()->get('loose_contract_manager');
+        $service = ContainerBuilderFactory::getInstance()->get(LooseContractManagerInterface::class);
         return $service;
     }
 }

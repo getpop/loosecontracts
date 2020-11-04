@@ -6,7 +6,10 @@ namespace PoP\LooseContracts;
 
 interface NameResolverInterface
 {
-    public function getName(string $name);
-    public function implementName(string $abstractName, string $implementationName);
-    public function implementNames(array $names);
+    public function getName(string $name): string;
+    public function implementName(string $abstractName, string $implementationName): void;
+    /**
+     * @param string[] $names
+     */
+    public function implementNames(array $names): void;
 }

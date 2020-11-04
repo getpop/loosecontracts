@@ -22,11 +22,17 @@ abstract class AbstractLooseContractSet
         );
     }
 
-    public function getRequiredHooks()
+    /**
+     * @return string[]
+     */
+    public function getRequiredHooks(): array
     {
         return [];
     }
-    public function getRequiredNames()
+    /**
+     * @return string[]
+     */
+    public function getRequiredNames(): array
     {
         return [];
     }

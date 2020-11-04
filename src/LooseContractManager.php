@@ -23,6 +23,9 @@ class LooseContractManager implements LooseContractManagerInterface
      */
     protected array $implementedNames = [];
 
+    /**
+     * @return string[]
+     */
     public function getNotImplementedRequiredHooks(): array
     {
         return array_diff(
@@ -31,6 +34,9 @@ class LooseContractManager implements LooseContractManagerInterface
         );
     }
 
+    /**
+     * @param string[] $hooks
+     */
     public function requireHooks(array $hooks): void
     {
         $this->requiredHooks = array_merge(
@@ -39,6 +45,9 @@ class LooseContractManager implements LooseContractManagerInterface
         );
     }
 
+    /**
+     * @param string[] $hooks
+     */
     public function implementHooks(array $hooks): void
     {
         $this->implementedHooks = array_merge(
@@ -47,6 +56,9 @@ class LooseContractManager implements LooseContractManagerInterface
         );
     }
 
+    /**
+     * @return string[]
+     */
     public function getNotImplementedRequiredNames(): array
     {
         return array_diff(
@@ -55,6 +67,9 @@ class LooseContractManager implements LooseContractManagerInterface
         );
     }
 
+    /**
+     * @param string[] $names
+     */
     public function requireNames(array $names): void
     {
         $this->requiredNames = array_merge(
@@ -63,6 +78,9 @@ class LooseContractManager implements LooseContractManagerInterface
         );
     }
 
+    /**
+     * @param string[] $names
+     */
     public function implementNames(array $names): void
     {
         $this->implementedNames = array_merge(

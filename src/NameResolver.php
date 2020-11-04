@@ -11,19 +11,22 @@ class NameResolver extends AbstractNameResolver
      */
     protected array $names = [];
 
-    public function getName(string $name)
+    public function getName(string $name): string
     {
         // If there's no entry, then use the original $hookName
         return $this->names[$name] ?? $name;
     }
 
-    public function implementName(string $abstractName, string $implementationName)
+    public function implementName(string $abstractName, string $implementationName): void
     {
         parent::implementName($abstractName, $implementationName);
         $this->names[$abstractName] = $implementationName;
     }
 
-    public function implementNames(array $names)
+    /**
+     * @param string[] $names
+     */
+    public function implementNames(array $names): void
     {
         parent::implementNames($names);
         $this->names = array_merge(
